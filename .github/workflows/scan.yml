@@ -1,0 +1,52 @@
+name: TrueAlgo Scan
+
+on:
+  schedule:
+    # Mon-Fri scans converted to UTC (ET = UTC-4 in summer, UTC-5 in winter)
+    # Running at :05 past each hour so market data settles
+    # 9:00 ET  = 13:05 UTC  (covers both EDT and EST with slight offset)
+    # 10:00 ET = 14:05 UTC
+    # 11:00 ET = 15:05 UTC
+    # 12:00 ET = 16:05 UTC
+    # 13:00 ET = 17:05 UTC
+    # 14:00 ET = 18:05 UTC
+    # 15:00 ET = 19:05 UTC
+    # 15:30 ET = 19:35 UTC
+    - cron: '5 13 * * 1-5'
+    - cron: '5 14 * * 1-5'
+    - cron: '5 15 * * 1-5'
+    - cron: '5 16 * * 1-5'
+    - cron: '5 17 * * 1-5'
+    - cron: '5 18 * * 1-5'
+    - cron: '5 19 * * 1-5'
+    - cron: '35 19 * * 1-5'
+  workflow_dispatch:  # allow manual trigger
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests pandas yfinance pytz
+
+      - name: Run TrueAlgo scan
+        env:
+          FF_SESSION: ${{ secrets.FF_SESSION }}
+        run: python truealgo_live.py --json-out web/levels.json
+
+      - name: Commit updated levels
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "scan: update levels.json"
+          file_pattern: web/levels.json
+          commit_user_name: TrueAlgo Bot
+          commit_user_email: bot@truealgo.local
