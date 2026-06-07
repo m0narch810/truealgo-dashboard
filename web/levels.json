@@ -1,12 +1,78 @@
 {
-  "updated": "not yet scanned",
-  "updated_iso": null,
-  "nq": 0,
-  "qqq": 0,
-  "atr": null,
-  "atr_ok": false,
-  "snap": "same_day",
-  "precision": [],
-  "volume": [],
-  "levels": []
+  "updated": "2026-06-07 18:48 ET",
+  "updated_iso": "2026-06-07T18:48:33.725217-04:00",
+  "nq": 29010.0,
+  "qqq": 705.06,
+  "atr": 523.7,
+  "atr_ok": true,
+  "snap": "next_day",
+  "precision": [
+    705.0,
+    730.0,
+    725.0
+  ],
+  "volume": [
+    705.0,
+    730.0,
+    725.0,
+    720.0,
+    722.0,
+    715.0
+  ],
+  "levels": [
+    {
+      "qqq": 705.0,
+      "dist": 2.5,
+      "dir": "from_above",
+      "score": 7,
+      "gate": true,
+      "rank": 1,
+      "signals": "S12:rank1 S1:prox60 S5:flip S4:grad S11:nextday S9:fresh S10:tight"
+    },
+    {
+      "qqq": 730.0,
+      "dist": 1026.2,
+      "dir": "from_below",
+      "score": 6,
+      "gate": true,
+      "rank": 3,
+      "signals": "S6:ITMput S5:flip S4:grad S11:nextday S9:fresh S15:below"
+    },
+    {
+      "qqq": 725.0,
+      "dist": 820.4,
+      "dir": "from_below",
+      "score": 6,
+      "gate": true,
+      "rank": 6,
+      "signals": "S6:ITMput S5:flip S4:grad S11:nextday S9:fresh S15:below"
+    },
+    {
+      "qqq": 720.0,
+      "dist": 614.7,
+      "dir": "from_below",
+      "score": 5,
+      "gate": true,
+      "rank": 2,
+      "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S15:below"
+    },
+    {
+      "qqq": 722.0,
+      "dist": 697.0,
+      "dir": "from_below",
+      "score": 5,
+      "gate": true,
+      "rank": 4,
+      "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S15:below"
+    },
+    {
+      "qqq": 715.0,
+      "dist": 409.0,
+      "dir": "from_below",
+      "score": 5,
+      "gate": true,
+      "rank": 5,
+      "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S15:below"
+    }
+  ]
 }
