@@ -1,0 +1,11 @@
+# Local cookie config — never commit real credentials
+truealgo_config.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Data / cache
+truealgo_cache/
+results/
+historicaldata/

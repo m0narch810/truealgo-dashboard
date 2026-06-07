@@ -48,11 +48,13 @@ def _load_ff_session() -> str:
                 return cfg['ff_session']
         except Exception:
             pass
-    # 2. Environment variable
+    # 2. Environment variable (used by GitHub Actions)
     if os.environ.get('FF_SESSION'):
         return os.environ['FF_SESSION']
-    # 3. Hardcoded fallback (will expire — update config file instead)
-    return 'j_g_U67Ox9np5aXxK5YKHkVnQt41_RnyUEtmo7Bw7q0'
+    raise RuntimeError(
+        "FF_SESSION not configured. "
+        "Add ff_session to truealgo_config.json or set FF_SESSION env var."
+    )
 
 FF_HEADERS = {
     'Accept': '*/*',
