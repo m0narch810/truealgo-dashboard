@@ -1,43 +1,24 @@
 {
-  "updated": "2026-06-08 15:29 ET",
-  "updated_iso": "2026-06-08T15:29:05.028016-04:00",
-  "nq": 29422.5,
-  "qqq": 715.29,
+  "updated": "2026-06-08 17:24 ET",
+  "updated_iso": "2026-06-08T17:24:41.142934-04:00",
+  "nq": 29435.2,
+  "qqq": 716.07,
   "atr": 559.5,
   "atr_ok": true,
   "snap": "next_day",
   "precision": [
-    716.0,
-    715.0,
     720.0
   ],
   "volume": [
-    716.0,
+    720.0,
     715.0,
-    720.0
+    716.0,
+    717.0
   ],
   "levels": [
     {
-      "qqq": 716.0,
-      "dist": 29.0,
-      "dir": "from_below",
-      "score": 8,
-      "gate": true,
-      "rank": 3,
-      "signals": "S14:ITM+PROX S6:ITMput S1:prox60 S7:Mon/Wed S11:nextday S9:fresh S10:tight S15:below"
-    },
-    {
-      "qqq": 715.0,
-      "dist": 12.1,
-      "dir": "from_above",
-      "score": 6,
-      "gate": true,
-      "rank": 1,
-      "signals": "S12:rank1 S1:prox60 S7:Mon/Wed S11:nextday S9:fresh S10:tight"
-    },
-    {
       "qqq": 720.0,
-      "dist": 193.5,
+      "dist": 161.5,
       "dir": "from_below",
       "score": 6,
       "gate": true,
@@ -45,30 +26,48 @@
       "signals": "S6:ITMput S4:grad S7:Mon/Wed S11:nextday S9:fresh S15:below"
     },
     {
-      "qqq": 714.0,
-      "dist": 53.3,
+      "qqq": 715.0,
+      "dist": 44.0,
       "dir": "from_above",
-      "score": 4,
+      "score": 5,
+      "gate": true,
+      "rank": 1,
+      "signals": "S12:rank1 S1:prox60 S7:Mon/Wed S11:nextday S9:fresh"
+    },
+    {
+      "qqq": 716.0,
+      "dist": 2.9,
+      "dir": "from_above",
+      "score": 5,
+      "gate": true,
+      "rank": 3,
+      "signals": "S1:prox60 S7:Mon/Wed S11:nextday S9:fresh S10:tight"
+    },
+    {
+      "qqq": 717.0,
+      "dist": 38.2,
+      "dir": "from_below",
+      "score": 5,
       "gate": true,
       "rank": 5,
-      "signals": "S1:prox60 S7:Mon/Wed S11:nextday S9:fresh"
+      "signals": "S1:prox60 S7:Mon/Wed S11:nextday S9:fresh S15:below"
     },
     {
       "qqq": 718.0,
-      "dist": 111.3,
+      "dist": 79.3,
       "dir": "from_below",
       "score": 4,
       "gate": true,
-      "rank": 6,
+      "rank": 4,
       "signals": "S7:Mon/Wed S11:nextday S9:fresh S15:below"
     },
     {
-      "qqq": 713.0,
-      "dist": 94.4,
+      "qqq": 714.0,
+      "dist": 85.1,
       "dir": "from_above",
       "score": 3,
       "gate": true,
-      "rank": 4,
+      "rank": 6,
       "signals": "S7:Mon/Wed S11:nextday S9:fresh"
     }
   ]
