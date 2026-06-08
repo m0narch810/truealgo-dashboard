@@ -1,78 +1,72 @@
 {
-  "updated": "2026-06-07 18:48 ET",
-  "updated_iso": "2026-06-07T18:48:33.725217-04:00",
-  "nq": 29010.0,
-  "qqq": 705.06,
-  "atr": 523.7,
+  "updated": "2026-06-08 12:52 ET",
+  "updated_iso": "2026-06-08T12:52:26.552696-04:00",
+  "nq": 29590.8,
+  "qqq": 719.73,
+  "atr": 559.5,
   "atr_ok": true,
   "snap": "next_day",
   "precision": [
-    705.0,
-    730.0,
-    725.0
+    720.0
   ],
   "volume": [
-    705.0,
-    730.0,
-    725.0,
     720.0,
-    722.0,
-    715.0
+    722.0
   ],
   "levels": [
     {
-      "qqq": 705.0,
-      "dist": 2.5,
-      "dir": "from_above",
-      "score": 7,
+      "qqq": 720.0,
+      "dist": 11.1,
+      "dir": "from_below",
+      "score": 8,
       "gate": true,
       "rank": 1,
-      "signals": "S12:rank1 S1:prox60 S5:flip S4:grad S11:nextday S9:fresh S10:tight"
-    },
-    {
-      "qqq": 730.0,
-      "dist": 1026.2,
-      "dir": "from_below",
-      "score": 6,
-      "gate": true,
-      "rank": 3,
-      "signals": "S6:ITMput S5:flip S4:grad S11:nextday S9:fresh S15:below"
-    },
-    {
-      "qqq": 725.0,
-      "dist": 820.4,
-      "dir": "from_below",
-      "score": 6,
-      "gate": true,
-      "rank": 6,
-      "signals": "S6:ITMput S5:flip S4:grad S11:nextday S9:fresh S15:below"
-    },
-    {
-      "qqq": 720.0,
-      "dist": 614.7,
-      "dir": "from_below",
-      "score": 5,
-      "gate": true,
-      "rank": 2,
-      "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S15:below"
+      "signals": "S12:rank1 S1:prox60 S4:grad S7:Mon/Wed S11:nextday S9:fresh S10:tight S15:below"
     },
     {
       "qqq": 722.0,
-      "dist": 697.0,
-      "dir": "from_below",
-      "score": 5,
-      "gate": true,
-      "rank": 4,
-      "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S15:below"
-    },
-    {
-      "qqq": 715.0,
-      "dist": 409.0,
+      "dist": 93.3,
       "dir": "from_below",
       "score": 5,
       "gate": true,
       "rank": 5,
-      "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S15:below"
+      "signals": "S6:ITMput S7:Mon/Wed S11:nextday S9:fresh S15:below"
+    },
+    {
+      "qqq": 725.0,
+      "dist": 216.7,
+      "dir": "from_below",
+      "score": 4,
+      "gate": true,
+      "rank": 2,
+      "signals": "S7:Mon/Wed S11:nextday S9:fresh S15:below"
+    },
+    {
+      "qqq": 724.0,
+      "dist": 175.6,
+      "dir": "from_below",
+      "score": 4,
+      "gate": true,
+      "rank": 3,
+      "signals": "S7:Mon/Wed S11:nextday S9:fresh S15:below"
+    },
+    {
+      "qqq": 715.0,
+      "dist": 194.5,
+      "dir": "from_above",
+      "score": 3,
+      "gate": true,
+      "rank": 4,
+      "signals": "S7:Mon/Wed S11:nextday S9:fresh"
+    },
+    {
+      "qqq": 718.0,
+      "dist": 71.1,
+      "dir": "from_above",
+      "score": 3,
+      "gate": true,
+      "rank": 6,
+      "signals": "S7:Mon/Wed S11:nextday S9:fresh"
     }
   ]
 }
