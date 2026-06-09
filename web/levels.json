@@ -1,44 +1,43 @@
 {
-  "updated": "2026-06-09 14:33 ET",
-  "updated_iso": "2026-06-09T14:33:11.969363-04:00",
-  "nq": 28935.2,
-  "qqq": 704.77,
+  "updated": "2026-06-09 16:33 ET",
+  "updated_iso": "2026-06-09T16:33:52.637781-04:00",
+  "nq": 29086.0,
+  "qqq": 707.83,
   "atr": 627.8,
   "atr_ok": true,
   "snap": "next_day",
   "precision": [
-    705.0,
-    715.0
+    709.0,
+    708.0
   ],
   "volume": [
-    705.0,
-    715.0,
     709.0,
+    708.0,
     710.0,
-    716.0
+    711.0
   ],
   "levels": [
     {
-      "qqq": 705.0,
-      "dist": 9.4,
+      "qqq": 709.0,
+      "dist": 48.1,
       "dir": "from_below",
-      "score": 9,
+      "score": 8,
       "gate": true,
       "rank": 1,
-      "signals": "S14:ITM+PROX S6:ITMput S12:rank1 S1:prox60 S5:flip S11:nextday S9:fresh S10:tight S15:below"
+      "signals": "S14:ITM+PROX S6:ITMput S12:rank1 S1:prox60 S5:flip S11:nextday S9:fresh S15:below"
     },
     {
-      "qqq": 715.0,
-      "dist": 420.0,
+      "qqq": 708.0,
+      "dist": 7.0,
       "dir": "from_below",
-      "score": 6,
+      "score": 8,
       "gate": true,
-      "rank": 5,
-      "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S13:LVN S15:below"
+      "rank": 4,
+      "signals": "S14:ITM+PROX S6:ITMput S1:prox60 S5:flip S11:nextday S9:fresh S10:tight S15:below"
     },
     {
-      "qqq": 709.0,
-      "dist": 173.7,
+      "qqq": 710.0,
+      "dist": 89.2,
       "dir": "from_below",
       "score": 5,
       "gate": true,
@@ -46,26 +45,26 @@
       "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S15:below"
     },
     {
-      "qqq": 710.0,
-      "dist": 214.7,
+      "qqq": 711.0,
+      "dist": 130.3,
       "dir": "from_below",
       "score": 5,
       "gate": true,
-      "rank": 4,
+      "rank": 5,
       "signals": "S6:ITMput S5:flip S11:nextday S9:fresh S15:below"
     },
     {
-      "qqq": 716.0,
-      "dist": 461.1,
-      "dir": "from_below",
-      "score": 5,
+      "qqq": 707.0,
+      "dist": 34.1,
+      "dir": "from_above",
+      "score": 4,
       "gate": true,
       "rank": 6,
-      "signals": "S5:flip S11:nextday S9:fresh S13:LVN S15:below"
+      "signals": "S1:prox60 S5:flip S11:nextday S9:fresh"
     },
     {
-      "qqq": 700.0,
-      "dist": 195.8,
+      "qqq": 705.0,
+      "dist": 116.3,
       "dir": "from_above",
       "score": 3,
       "gate": true,
